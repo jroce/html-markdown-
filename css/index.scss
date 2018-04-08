@@ -1,0 +1,81 @@
+body{
+	background:#404040;
+	margin:0;
+	padding:0;
+}
+.container{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding-top:50px;
+	box-sizing:border-box;
+	.btn_item{
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:50px;
+		padding:5px 10px;
+		text-align:right;
+		background:#000;
+		box-sizing:border-box;
+		.btn{
+			display:inline-block;
+			height:40px;
+			line-height:40px;
+			text-align:center;
+			cursor:pointer;
+			color:#fff;
+			font-size:16px;
+			padding:0 10px;
+			margin-left:20px;
+			background:#409eff;
+			border-radius:3px;
+			&:hover{
+				background:#66b1ff;
+			}
+			&.btn_clear{
+				background:#ac2925;
+				&:hover{
+					background:#c9302c;
+				}
+			}
+		}
+	}
+	.edit_item{
+		float:left;
+		width:50%;
+		height:100%;
+		padding:20px;
+		box-sizing:border-box;
+		.html_item{
+		    float: left;
+		    width: 100%;
+		    height: 100%;
+		    resize: none;
+		    color:#fff;
+		    font-size:16px;
+	        background: transparent;
+		}
+	}
+	.preview_item{
+		float:left;
+		width:50%;
+		height:100%;
+		padding:20px;
+		background:#fff;
+		overflow:hidden;
+		overflow-y:scroll;
+		box-sizing:border-box;
+		.mark_item{
+		    float: left;
+		    width: 100%;
+		    height: 100%;
+		    resize: none;
+		    color:#141414;
+		    font-size:16px;
+		}
+	}
+}
